@@ -1,0 +1,54 @@
+:root {
+  --color-1: #004696;
+  --background-footer-color-1: #042959;
+  --background-footer-color-2: #08428c;
+  --background-footer-color-3: #89bad9;
+  --body-color: #f2f2f2;
+  --orange-color: #e65727;
+}
+
+.container-footer {
+  background: var(--background-footer-color-1);
+  width: 100%;
+}
+
+.footer {
+    padding: 2rem;
+}
+
+.redes-sociais {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociais ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-sociais i {
+    background: transparent;
+    padding: 0.8rem;
+    margin: 2rem;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.redes-sociais i:hover {
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+}
+
+.btn-footer {
+    display: block;
+    background: #fff4;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border: 1px solid #fff4;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}

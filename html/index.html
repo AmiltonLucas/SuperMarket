@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperEconômico</title>
+    <link rel="stylesheet" href="../src/style/style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="../js/index.js"></script>
+  </head>
+  <body>
+    <header id="inicio">
+      <article>
+        <section class="container-menu">
+          <div class="box-menu">
+            <a href="" class="image-logo">
+              <img
+                src="../src/image/super-transp.png"
+                alt="Logo marca do Super Econômico"
+              />
+            </a>
+            <nav class="menu">
+              <ul>
+                <li><a href="#">MERCEARIA</a></li>
+                <li><a href="#">PADARIA</a></li>
+                <li><a href="#bloco-loja">LOJAS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+                <li>
+                  <a href="login.html"
+                    ><i class="fa-solid fa-circle-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-solid fa-headset"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </article>
+    </header>
+    <main>
+      <article>
+        <div class="bloco-loja" id="bloco-loja">
+          <h2><span style="color: #004696">Super Econômico</span></h2>
+          <h2>mais próximo a você</h2>
+          <div class="container">
+            <div class="bloco-loja-box">
+              <div class="bloco-loja-infos">
+                <h3 class="loja-nome">
+                  <i class="fa-solid fa-location-dot"></i> <br />Super Econômico
+                </h3>
+                <p class="endereco">
+                  Praça Da Republica, 8 Centro - <b>Cariús Ceará</b>, 63530-000
+                </p>
+                <div class="infos">
+                  <p class="telefone">
+                    <i class="fa-solid fa-phone"></i> <br />
+                    <strong>Telefone:</strong>
+                    (88)997082594
+                    <br />
+                  </p>
+                  <p class="horario">
+                    <i class="fa-solid fa-clock"></i> <br />
+                    <strong>Horário de funcionamento:</strong>
+                    <br />
+                    <strong>Segunda a Domingo:</strong>
+                    das 5:30 às 21:00
+                    <br />
+                    <strong>Feriados:</strong>
+                    das 5:30 às 21:00
+                  </p>
+                </div>
+                <button class="btn-laranja" onclick="mostrarAlerta()">
+                  Trocar Loja
+                </button>
+
+                <div id="alerta" class="alert-container" style="display: none">
+                  <button class="close-button" onclick="fecharAlerta()">
+                    X
+                  </button>
+                  <p class="alert-text">
+                    Nenhuma Loja disponível para troca no momento.
+                  </p>
+                </div>
+              </div>
+              <div class="bloco-loja-servicos">
+                <div class="especialidades">
+                  <h4>Especialidades</h4>
+                  <p class="acougue">
+                    <i class="fa-solid fa-drumstick-bite"></i> <br />
+                    Açougue
+                  </p>
+                </div>
+                <div class="servicos">
+                  <h4>Serviços</h4>
+                  <p class="padaria">
+                    <i class="fa-solid fa-mug-hot fa-flip-horizontal"></i>
+                    <br />
+                    Padaria
+                  </p>
+                  <p class="recarga">
+                    <i class="fa-solid fa-mobile-screen"></i> <br />
+                    Recarga Celular
+                  </p>
+                  <p class="wifi">
+                    <i class="fa-solid fa-wifi"></i> <br />
+                    wifi
+                  </p>
+                </div>
+                <div class="delivery">
+                  <h4>Delivery</h4>
+                  <p class="entregas">
+                    <i class="fa-solid fa-motorcycle"></i> <br />
+                    Entregas
+                  </p>
+                </div>
+              </div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1981.9430366364043!2d-39.4983126!3d-6.5360694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a2f78d566507cd%3A0xa10be618e568664f!2sSuper%20econ%C3%B4mico!5e0!3m2!1spt-BR!2sbr!4v1712242878122!5m2!1spt-BR!2sbr"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="container-televenda-contrato">
+          <div class="container-televendas">
+            <img src="../src/image/vendedor.png" alt="vendedor" />
+            <div class="bloco-televendas">
+              <div class="bloco-televendas-infos">
+                <h2>
+                  Compramos <br />
+                  <span>seu produto!</span>
+                </h2>
+                <p>
+                  <strong
+                    >Entre em contato <br />
+                    conosco</strong
+                  >
+                </p>
+                <p>Telefone: (88)997082594</p>
+              </div>
+            </div>
+          </div>
+          <div class="container-contrato">
+            <img src="../src/image/contratante.png" alt="contratante" />
+            <div class="bloco-contrato">
+              <div class="bloco-contrato-infos">
+                <h2>Contratamos!</h2>
+                <p>
+                  <strong> Envie seu currículo</strong>
+                </p>
+                <button class="btn-enviar" onclick="mostrarAlerta()">
+                  Enviar
+                </button>
+                <div id="alerta" class="alert-container" style="display: none">
+                  <button class="close-button" onclick="fecharAlerta()">X</button>
+                  <p class="alert-text">
+                    Esta é uma mensagem de alerta flutuante!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <article>
+        <div class="container-footer" id="contato">
+          <div class="footer">
+            <div class="redes-sociais">
+              <h2>Redes Sociais</h2>
+              <p>Siga-nos</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/supereconomicocarius/"
+                    title="Siga-nos no Instagram"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/88997082594"
+                    title="Enviar mensagem no WhatsApp"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-footer">
+              <a href="#inicio">
+                <p>&copy Super Econômico</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>

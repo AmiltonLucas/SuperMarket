@@ -1,0 +1,448 @@
+:root {
+  --color-1: #004696;
+  --background-main-color-1: #042959;
+  --background-main-color-2: #08428c;
+  --background-main-color-3: #89bad9;
+  --body-color: #f2f2f2;
+  --orange-color: #e65727;
+}
+
+main i {
+  color: var(--orange-color);
+}
+
+.bloco-loja {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1.2rem;
+  margin: 3rem 1.2rem 3rem 1.2rem;
+  gap: 1.2rem;
+  background: #f2f2f2;
+  border-radius: 30px;
+}
+
+.bloco-loja strong,
+h3,
+h4 {
+  color: var(--color-1);
+}
+
+.bloco-loja i {
+  scale: 1.3;
+}
+
+.bloco-loja-box {
+  padding: 1.2rem;
+  gap: 2.4rem;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.bloco-loja-infos {
+  margin-bottom: 2rem;
+}
+
+.bloco-loja-infos p {
+  margin-bottom: 2rem;
+}
+
+.btn-laranja {
+  padding: 1rem;
+  border-radius: 30px;
+  background: var(--orange-color);
+  color: white;
+  cursor: pointer;
+}
+
+.loja-container {
+  flex-wrap: wrap;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.loja-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.close-loja-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #999;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+}
+
+.bloco-loja-servicos {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.bloco-loja-servicos p {
+  gap: 1rem;
+  padding-top: 1.2rem;
+}
+
+iframe {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+  border: 2px solid var(--color-1);
+  border-radius: 15px;
+}
+
+.container-televendas {
+  background: linear-gradient(
+    35deg,
+    var(--orange-color),
+    var(--background-main-color-1)
+  );
+  display: flex;
+  padding: 1.2rem;
+  margin: 3rem 1.2rem 3rem 1.2rem;
+  gap: 1.2rem;
+  border-radius: 30px;
+}
+
+.container-televendas img {
+  position: relative;
+  width: 100%;
+  width: 16rem;
+  right: 1rem;
+  bottom: -1.2rem;
+}
+
+.bloco-televendas {
+  position: relative;
+  color: white;
+}
+
+.container-contrato {
+  background: linear-gradient(
+    335deg,
+    var(--orange-color),
+    var(--background-main-color-1)
+  );
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1.2rem;
+  margin: 3rem 1.2rem 3rem 1.2rem;
+  gap: 1.2rem;
+  border-radius: 30px;
+}
+
+.container-contrato img {
+  position: relative;
+  width: 100%;
+  width: 16rem;
+  right: 1rem;
+  bottom: -1.2rem;
+}
+
+.bloco-contrato {
+  position: relative;
+  left: 2rem;
+  color: white;
+}
+
+.bloco-contrato-infos p {
+  margin-top: 0.5rem;
+}
+
+.btn-enviar {
+  color: white;
+  background: var(--orange-color);
+  padding: 1rem;
+  border-radius: 25px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.alert-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.alert-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #999;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .bloco-loja {
+    padding: 1.4rem;
+    margin: 3rem 1.2rem 3rem 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .bloco-loja i {
+    scale: 1.6;
+  }
+
+  .bloco-loja-box {
+    padding: 1.4rem;
+    gap: 2.8rem;
+  }
+
+  .bloco-loja-infos {
+    margin-bottom: 2.4rem;
+  }
+
+  .bloco-loja-infos p {
+    margin-bottom: 2.4rem;
+  }
+
+  .btn-laranja {
+    font-size: 2rem;
+  }
+
+  .loja-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 22px;
+  }
+
+  .loja-text {
+    font-size: 22px;
+  }
+
+  .close-loja-button {
+    top: 5px;
+    right: 5px;
+    font-size: 22px;
+  }
+
+  .bloco-loja-servicos {
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  .bloco-loja-servicos p {
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .container-televendas {
+    padding: 1.2rem;
+    margin: 3rem 1.2rem 3rem 1.2rem;
+    gap: 1.2rem;
+    border-radius: 30px;
+  }
+
+  .container-televendas img {
+    width: 100%;
+    width: 20rem;
+    bottom: -1.2rem;
+  }
+
+  .bloco-televendas {
+    position: relative;
+    color: white;
+  }
+
+  .container-contrato {
+    padding: 1.2rem;
+    margin: 3rem 1.2rem 3rem 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .container-contrato img {
+    width: 100%;
+    width: 20rem;
+    bottom: -1.2rem;
+  }
+
+  .bloco-contrato {
+    color: white;
+  }
+
+  .bloco-contrato-infos p {
+    margin-top: 0.8rem;
+  }
+
+  .btn-enviar {
+    font-size: 1.6rem;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+  }
+
+  .alert-container {
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+  }
+
+  .alert-text {
+    font-size: 22px;
+  }
+
+  .close-button {
+    top: 5px;
+    right: 5px;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bloco-loja {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2.4rem;
+    font-size: 1.8rem;
+  }
+
+  .bloco-loja i {
+    scale: 1.8;
+  }
+
+  .bloco-loja-box {
+    padding: 1.5rem;
+    gap: 2.6rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bloco-loja-infos {
+    margin: 2.2rem;
+  }
+
+  .bloco-loja-infos p {
+    margin-bottom: 2.4rem;
+  }
+
+  .btn-laranja {
+    padding: 2rem;
+  }
+
+  .loja-text {
+    font-size: 24px;
+  }
+
+  .bloco-loja-servicos {
+    gap: 2.8rem;
+    margin-top: 5rem;
+  }
+
+  .bloco-loja-servicos p {
+    gap: 1.8rem;
+    padding-top: 2rem;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .container-televenda-contrato {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+  }
+
+  .container-televendas {
+    display: flex;
+    min-width: 450px;
+    max-width: 720px;
+    padding: 2rem;
+    margin: 3rem 1rem 3rem 1rem;
+    gap: 1.6rem;
+    top: 25%;
+    left: 25%;
+  }
+
+  .container-televendas img {
+    width: 24rem;
+    bottom: -2rem;
+  }
+
+  .bloco-televendas {
+    font-size: 2.2rem;
+  }
+
+  .container-contrato {
+    display: flex;
+    min-width: 450px;
+    max-width: 720px;
+    padding: 2rem;
+    margin: 3rem 1rem 3rem 1rem;
+    gap: 1.6rem;
+    top: 25%;
+    left: 25%;
+  }
+
+  .container-contrato img {
+    width: 22rem;
+    bottom: -2rem;
+  }
+
+  .bloco-contrato {
+    font-size: 2.2rem;
+  }
+
+  .bloco-contrato-infos p {
+    margin-top: 1rem;
+  }
+
+  .btn-enviar {
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+  }
+
+  .alert-container {
+    top: 50%;
+    left: 50%;
+    padding: 26px;
+  }
+
+  .alert-text {
+    font-size: 26px;
+  }
+
+  .close-button {
+    font-size: 32px;
+  }
+}
+
